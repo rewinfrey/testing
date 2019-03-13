@@ -1,5 +1,5 @@
 package test
 
-func (q *jmOfStruct) UnmarshalJSON(value []byte) error {
+func (q *jmOfStruct) UnmarshalJSON() error {
 	return nil
 }
