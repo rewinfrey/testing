@@ -8,8 +8,11 @@ import (
 
 func init() {
 	jm := json.Marshaler(jmOfStruct{})
+	
 	tm1 := encoding.TextMarshaler(tmOfStruct{})
+	
 	tm2 := encoding.TextMarshaler(&tmOfStructInt{})
+	
 	marshalCases = append(marshalCases,
 		jmOfStruct{},
 		&jm,
